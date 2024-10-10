@@ -1,12 +1,19 @@
 import React from "react";
 import { HamburgerBtn } from "./buttons";
+import { Link } from "react-router-dom";
 
-function Nav() {
+function Nav({ closeNav }: { closeNav: () => void }) {
   return (
     <nav className="fixed top-20 left-0 right-0 list-none text-2xl p-6 bg-desaturated-black z-50">
-      <li>Home</li>
-      <li>About Me</li>
-      <li>Projects</li>
+      <Link to={"/"} onClick={closeNav}>
+        <li>Home</li>
+      </Link>
+      <Link to={"/about-me"} onClick={closeNav}>
+        <li>About Me</li>
+      </Link>
+      <Link to={"/projects"} onClick={closeNav}>
+        <li>Projects</li>
+      </Link>
     </nav>
   );
 }
@@ -18,10 +25,12 @@ function MobileNav() {
     setShowNav(value);
   };
 
+  const closeNav = () => setShowNav(false);
+
   return (
     <div className="relative md:hidden">
-      <HamburgerBtn handleShowNav={handleShowNav} />
-      {showNav && <Nav />}
+      <HamburgerBtn showNav={showNav} handleShowNav={handleShowNav} />
+      {showNav && <Nav closeNav={closeNav} />}
     </div>
   );
 }
