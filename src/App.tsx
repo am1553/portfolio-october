@@ -1,25 +1,35 @@
+import { GitHub, LinkedIn } from "@mui/icons-material";
 import Header from "./components/Header";
 import HomeIntro from "./components/HomeIntro";
+import Lines from "./components/Lines";
 import ProblemSolving from "./components/ProblemSolving";
 import ProjectsOverview from "./components/ProjectsOverview";
 import Technologies from "./components/Technologies";
-
-function Lines() {
+import FooterImage from "./assets/footer-image.svg";
+function Footer() {
   return (
-    <div className="absolute top-20 flex flex-row justify-evenly w-full z-0 opacity-5">
-      {Array.from({ length: 5 }).map((_, i) => {
-        console.log(i);
-        return (
-          <div className="flex flex-col gap-8" key={i}>
-            {Array.from({ length: 100 }).map((_, j) => {
-              return (
-                <div key={j} className="w-[1px] h-8 bg-desaturated-white" />
-              );
-            })}
-          </div>
-        );
-      })}
-    </div>
+    <footer className="bg-gray w-full relative flex flex-col gap-6 py-12 items-center">
+      <img src={FooterImage} alt="" className="w-3/5" />
+      <nav className="flex gap-2 list-none items-center justify-center text-xl">
+        <li>Home</li>
+        <div className="h-1 w-1 rounded-full bg-desaturated-white" />
+        <li>About Me</li>
+        <div className="h-1 w-1 rounded-full bg-desaturated-white" />
+        <li>Projects</li>
+      </nav>
+      <div className="flex gap-4 items-center justify-center">
+        <div className="">
+          <button type="button">
+            <LinkedIn style={{ fontSize: "2rem" }} />
+          </button>
+        </div>
+        <div className="">
+          <button type="button">
+            <GitHub style={{ fontSize: "2rem" }} />
+          </button>
+        </div>
+      </div>
+    </footer>
   );
 }
 
@@ -33,6 +43,7 @@ function App() {
         <ProjectsOverview />
         <Technologies />
         <ProblemSolving />
+        <Footer />
       </div>
     </div>
   );
