@@ -23,7 +23,7 @@ function TechnologyCard({
       </div>
       <div className="py-8 px-6 text-center">
         <span className="font-heading text-2xl font-bold">{data.label}</span>
-        <p className="opacity-70">{data.description}</p>
+        <p className="opacity-70 font-body">{data.description}</p>
       </div>
     </div>
   );

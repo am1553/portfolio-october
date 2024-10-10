@@ -2,7 +2,7 @@ import ManAtDeskImage from "../assets/man-at-desk.svg";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 function ProjectsOverview() {
   return (
-    <div className="px-8 flex flex-col gap-8">
+    <div className="px-8 flex flex-col gap-8 z-10">
       <img
         src={ManAtDeskImage}
         alt="man at desk working"
