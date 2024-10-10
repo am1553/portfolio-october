@@ -10,14 +10,32 @@ export const HamburgerBtn = ({
   const toggleOpen = () => {
     setIsOpen(!isOpen);
   };
+  const handleClose = () => setIsOpen(false);
 
   React.useEffect(() => {
     handleShowNav(isOpen);
     const body = document.querySelector("body");
+    const root = document.getElementById("root");
+    const overlay = document.createElement("div");
+    overlay!.style.position = "absolute";
+    overlay!.style.top = "80px";
+    overlay!.style.bottom = "0";
+    overlay!.style.left = "0";
+    overlay!.style.right = "0";
+    overlay!.style.backgroundColor = "#00000080";
+    overlay!.style.zIndex = "10";
+    overlay!.style.height = "100vh";
+    overlay!.style.width = "100vw";
+    overlay.id = "overlay";
+    console.log(overlay);
     if (isOpen) {
       body!.style.overflow = "hidden";
+      root!.appendChild(overlay);
+      overlay.addEventListener("click", handleClose);
     } else {
       body!.style.overflow = "auto";
+      overlay.removeEventListener("click", handleClose);
+      document.getElementById("overlay")?.remove();
     }
   }, [isOpen]);
 
