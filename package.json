@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://am1553.github.io/portfolio-october/",
+  "homepage": "https://aryanmehta.dev",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
