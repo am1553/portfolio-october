@@ -10,7 +10,7 @@ function TechnologyCard({
   };
 }) {
   return (
-    <div className="rounded-3xl overflow-clip bg-desaturated-black">
+    <div className="rounded-3xl overflow-clip bg-desaturated-black shadow-md">
       <div className="relative shadow-lg">
         <div
           className={`${data.cover} bg-cover ${
