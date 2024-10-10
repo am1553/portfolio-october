@@ -8,5 +8,5 @@ export default defineConfig({
     outDir: "build",
     emptyOutDir: true, // also necessary
   },
-  // base: "portfolio-october",
+  base: "portfolio-october",
 });
