@@ -7,7 +7,7 @@ function RootLayout({ children }: { children: React.ReactNode }) {
     <div className="relative overflow-hidden">
       <Lines />
       <Header />
-      <div className="flex flex-col  max-w-screen-2xl xl:mx-auto gap-24 lg:gap-40 relative h-fit">
+      <div className="flex flex-col  max-w-screen-2xl xl:mx-auto gap-24 lg:gap-40 xl:gap-52 relative h-fit">
         {children}
       </div>
       <Footer />

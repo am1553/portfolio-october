@@ -47,7 +47,7 @@ function HomeIntro() {
   return (
     <div className="rounded-3xl overflow-clip text-center flex flex-col bg-pale-silver text-desaturated-black relative lg:grid lg:grid-cols-[auto_542px] lg:grid-rows-1">
       <BackgroundImage />
-      <div className="flex flex-col gap-8 py-10 lg:col-start-1 lg:row-start-1 px-6 lg:px-12 justify-center w-fit">
+      <div className="flex flex-col gap-8 py-10 max-lg:mx-auto lg:col-start-1 lg:row-start-1 px-6 lg:px-12 justify-center w-fit">
         <IntroText />
         <ButtonWrapper />
       </div>

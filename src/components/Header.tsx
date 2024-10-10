@@ -1,6 +1,7 @@
 import React from "react";
 import { HamburgerBtn } from "./buttons";
 import { Link } from "react-router-dom";
+import DesktopNav from "./DesktopNav";
 
 function Nav({ closeNav }: { closeNav: () => void }) {
   return (
@@ -35,21 +36,9 @@ function MobileNav() {
   );
 }
 
-function DesktopNav() {
-  return (
-    <div className="max-md:hidden">
-      <nav className="list-none flex gap-4 text-lg lg:text-xl lg:gap-14 uppercase tracking-wider font-heading">
-        <li>Home</li>
-        <li>About Me</li>
-        <li>Projects</li>
-      </nav>
-    </div>
-  );
-}
-
 function Header() {
   return (
-    <header className="h-20 md:h-32 w-full flex items-center justify-between max-w-screen-2xl mx-auto px-8 lg:px-12">
+    <header className="h-20 md:h-32 w-full flex items-center justify-between max-w-screen-2xl mx-auto px-8 lg:px-12 xl:px-0">
       <span className="font-body text-3xl md:text-4xl lg:text-5xl font-bold">
         aryan mehta
       </span>

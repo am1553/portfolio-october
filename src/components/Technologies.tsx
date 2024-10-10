@@ -73,7 +73,7 @@ const data = [
 
 function Technologies() {
   return (
-    <div className="bg-gray px-8 py-20 flex flex-col gap-8 z-10">
+    <div className="px-8 flex flex-col gap-8 z-10 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       {data.map((tech, i) => {
         return <TechnologyCard key={i} data={tech} />;
       })}

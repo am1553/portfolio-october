@@ -10,14 +10,14 @@ function TechnologyCard({
   };
 }) {
   return (
-    <div className="rounded-3xl overflow-clip bg-desaturated-black shadow-md">
+    <div className="rounded-3xl overflow-clip bg-gray shadow-md">
       <div className="relative shadow-lg">
         <div
           className={`${data.cover} bg-cover ${
             data.coverPosition === "top" ? "bg-top" : "bg-bottom"
           } h-32 w-full rounded-3xl bg-desaturated-white`}
         />
-        <div className="h-20 w-20 rounded-full flex items-center justify-center absolute -bottom-10 right-10 border-8 border-desaturated-black bg-desaturated-white shadow-md">
+        <div className="h-20 w-20 rounded-full flex items-center justify-center absolute -bottom-10 right-10 border-8 border-gray bg-desaturated-white shadow-md">
           <img src={data.icon} alt="" className="h-10" />
         </div>
       </div>
