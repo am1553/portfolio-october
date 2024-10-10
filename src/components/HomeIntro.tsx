@@ -10,7 +10,7 @@ function BackgroundImage() {
 function IntroText() {
   return (
     <div className="flex flex-col gap-2 lg:gap-4 max-lg:max-w-lg mx-auto lg:text-left">
-      <span className="font-heading text-4xl lg:text-5xl xl:text-7xl font-bold">
+      <span className="font-heading text-4xl lg:text-5xl xl:text-7xl font-black">
         Full Stack Developer
       </span>
       <p className="text-xl lg:text-2xl opacity-60 max-w-xl font-semibold">

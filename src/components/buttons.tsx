@@ -27,7 +27,6 @@ export const HamburgerBtn = ({
     overlay!.style.height = "100vh";
     overlay!.style.width = "100vw";
     overlay.id = "overlay";
-    console.log(overlay);
     if (isOpen) {
       body!.style.overflow = "hidden";
       root!.appendChild(overlay);
