@@ -28,28 +28,32 @@ const data = [
   {
     label: "ReactJS",
     icon: ReactIcon,
-    description: "",
+    description:
+      "Highly experienced in building robust, enterprise-grade applications with a focus on performance and scalability.",
     coverPosition: "bottom",
     cover: "bg-graphic-one",
   },
   {
     label: "NodeJS",
     icon: NodeJSIcon,
-    description: "",
+    description:
+      "Strong proficiency in building RESTful APIs and ensuring robust query validation before interacting with the database, optimizing both security and performance.",
     coverPosition: "bottom",
     cover: "bg-graphic-two",
   },
   {
     label: "PostgresSQL",
     icon: PostgresSQLIcon,
-    description: "",
+    description:
+      "Good understanding of PostgreSQL and experience in building databases with a focus on maintaining data integrity and improving query efficiency.",
     coverPosition: "bottom",
     cover: "bg-graphic-three",
   },
   {
     label: "MongoDB",
     icon: MongoDBIcon,
-    description: "",
+    description:
+      "Good understanding of MongoDB with experience in designing databases and handling queries efficiently, focusing on data organization and performance.",
     coverPosition: "bottom",
     cover: "bg-graphic-four",
   },
@@ -73,7 +77,7 @@ const data = [
 
 function Technologies() {
   return (
-    <div className="px-8 flex flex-col gap-8 z-10 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+    <div className="px-6 flex flex-col gap-8 z-10 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       {data.map((tech, i) => {
         return <TechnologyCard key={i} data={tech} />;
       })}

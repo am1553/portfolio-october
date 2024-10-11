@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 import ManAtDeskImage from "../assets/man-at-desk.svg";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 function ProjectsOverview() {
   return (
-    <div className="px-8 flex flex-col gap-8 z-10 md:grid md:grid-cols-[auto_1fr]">
+    <div className="px-6 flex flex-col gap-8 z-10 md:grid md:grid-cols-[auto_1fr]">
       <img
         src={ManAtDeskImage}
         alt="man at desk working"
@@ -17,13 +18,13 @@ function ProjectsOverview() {
             learning and growing as a software engineer.
           </span>
         </p>
-        <button
-          type="button"
+        <Link
+          to="/projects"
           className="flex gap-2 pl-6 pr-4 h-10 rounded-full items-center bg-deep-purple text-desaturated-white"
         >
           <span className="font-semibold">View Projects</span>
           <KeyboardArrowRightIcon />
-        </button>
+        </Link>
       </div>
     </div>
   );

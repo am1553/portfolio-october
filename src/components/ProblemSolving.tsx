@@ -1,6 +1,6 @@
 function ProblemSolving() {
   return (
-    <div className="px-8">
+    <div className="px-6">
       <p className="text-3xl font-body font-semibold text-center md:text-4xl lg:text-5xl xl:text-6xl max-w-4xl mx-auto">
         <span className="text-purple">Problem solving</span>{" "}
         <span className="opacity-70">enthusiast transforming designs into</span>{" "}

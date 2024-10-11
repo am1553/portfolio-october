@@ -23,18 +23,23 @@ function IntroText() {
 }
 
 function ButtonWrapper() {
+  const openCV = () => {
+    window.open("/aryan-mehta-cv.pdf", "_blank");
+  };
   return (
     <div className="flex gap-6 max-lg:mx-auto">
-      <button
-        type="button"
+      <a
+        href="https://www.linkedin.com/in/aryanmehta-dev/"
+        target="_blank"
         className="flex gap-2 pl-6 pr-4 bg-deep-purple h-10 rounded-full items-center text-desaturated-white"
       >
         <span className="font-semibold">Let's Connect</span>
         <LinkedInIcon />
-      </button>
+      </a>
       <button
         type="button"
         className="flex gap-2 pl-6 pr-4 h-10 rounded-full items-center text-deep-purple"
+        onClick={openCV}
       >
         <span className="font-semibold">View CV</span>
         <KeyboardArrowRightIcon />
