@@ -10,10 +10,10 @@ function Footer() {
           <Link to={"/"}>
             <li>Home</li>
           </Link>
-          <div className="h-1 w-1 rounded-full bg-desaturated-white" />
+          {/* <div className="h-1 w-1 rounded-full bg-desaturated-white" />
           <Link to={"/about-me"}>
             <li>About Me</li>
-          </Link>
+          </Link> */}
           <div className="h-1 w-1 rounded-full bg-desaturated-white" />
           <Link to={"/projects"}>
             <li>Projects</li>

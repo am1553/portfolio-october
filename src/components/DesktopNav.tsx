@@ -7,9 +7,9 @@ function DesktopNav() {
         <Link to={"/"}>
           <li>Home</li>
         </Link>
-        <Link to={"/about-me"}>
+        {/* <Link to={"/about-me"}>
           <li>About Me</li>
-        </Link>
+        </Link> */}
         <Link to={"/projects"}>
           <li>Projects</li>
         </Link>

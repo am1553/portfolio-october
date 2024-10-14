@@ -9,9 +9,9 @@ function Nav({ closeNav }: { closeNav: () => void }) {
       <Link to={"/"} onClick={closeNav}>
         <li>Home</li>
       </Link>
-      <Link to={"/about-me"} onClick={closeNav}>
+      {/* <Link to={"/about-me"} onClick={closeNav}>
         <li>About Me</li>
-      </Link>
+      </Link> */}
       <Link to={"/projects"} onClick={closeNav}>
         <li>Projects</li>
       </Link>
@@ -39,9 +39,12 @@ function MobileNav() {
 function Header() {
   return (
     <header className="h-20 md:h-32 w-full flex items-center justify-between max-w-screen-2xl mx-auto px-6 lg:px-12 xl:px-0">
-      <span className="font-body text-3xl md:text-4xl lg:text-5xl font-bold">
+      <Link
+        className="font-body text-3xl md:text-4xl lg:text-5xl font-bold"
+        to={"/"}
+      >
         aryan mehta
-      </span>
+      </Link>
       <MobileNav />
       <DesktopNav />
     </header>

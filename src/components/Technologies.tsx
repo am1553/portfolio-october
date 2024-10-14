@@ -45,7 +45,7 @@ const data = [
     label: "PostgresSQL",
     icon: PostgresSQLIcon,
     description:
-      "Good understanding of PostgreSQL and experience in building databases with a focus on maintaining data integrity and improving query efficiency.",
+      "Good understanding and experience in building databases with a focus on maintaining data integrity and improving query efficiency.",
     coverPosition: "bottom",
     cover: "bg-graphic-three",
   },
@@ -53,7 +53,7 @@ const data = [
     label: "MongoDB",
     icon: MongoDBIcon,
     description:
-      "Good understanding of MongoDB with experience in designing databases and handling queries efficiently, focusing on data organization and performance.",
+      "Good understanding and experience in designing databases and handling queries efficiently, focusing on data organization and performance.",
     coverPosition: "bottom",
     cover: "bg-graphic-four",
   },
