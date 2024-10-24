@@ -40,7 +40,7 @@ function Header() {
   return (
     <header className="h-20 md:h-32 w-full flex items-center justify-between max-w-screen-2xl mx-auto px-6 lg:px-12 xl:px-0">
       <Link
-        className="font-body text-3xl md:text-4xl lg:text-5xl font-bold"
+        className="font-body text-3xl md:text-4xl lg:text-5xl font-bold text-white"
         to={"/"}
       >
         aryan mehta
