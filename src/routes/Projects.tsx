@@ -4,8 +4,26 @@ import PhotoSnapImage from "../assets/photosnap.png";
 import EntertainmentImage from "../assets/entertainment.png";
 import AudioPhileImage from "../assets/audiophile.png";
 import PersonalFinanceImage from "../assets/personal-finance.png";
+import NotesAppImage from "../assets/notes-app-project.png";
 import ProjectCard from "../components/ProjectCard";
 const data = [
+  {
+    img: NotesAppImage,
+    title: "Notes",
+    description:
+      "A full-stack notes management web application developed with React and Express, leveraging TypeScript for robustness and PostgreSQL for enhanced performance and scalability. The project showcases a strong understanding of UI layout design, database optimization, and efficient data management practices.",
+    tags: [
+      "React.js",
+      "Express.js",
+      "TypeScript",
+      "PostgresSQL",
+      "Unit Testing",
+      "TailwindCSS",
+      "JWT Authentication",
+    ],
+    live: "https://notesapp-react-akzo.onrender.com/",
+    code: "https://github.com/am1553/notesapp-react",
+  },
   {
     img: PersonalFinanceImage,
     title: "Personal Finance",
